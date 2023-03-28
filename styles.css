@@ -1,0 +1,166 @@
+body {
+    font-size: 20px;
+
+}
+
+.quadrado {
+    width: 100px;
+    height: 100px;
+}
+
+.quadrado-red {
+    background-color: red;
+    /*  position: sticky; permite que os outros elementos se posicionem no flow*/
+}
+
+.quadrado-blue {
+    background-color: blue;
+    /*  position: fixed; fica fixo em relação ao viewport */
+
+}
+
+.quadrado-green {
+    background-color: green;
+}
+
+.quadro {
+    width: 500px;
+    height: 5000px;
+    border: 1px solid gray;
+}
+
+.paragrafo {
+    text-align: justify;
+}
+
+.header {
+    height: 100px;
+    width: 80%;
+    margin: auto;
+    background-color: orangered;
+    padding: 30px;
+}
+
+.content {
+    background-color: yellowgreen;
+    height: 100px;
+    width: 100%;
+}
+
+img {
+    /*   float: right; */
+}
+
+p {
+    /* display: inline; */
+    /* clear: right; */
+}
+
+.top-bar {
+    background-color: darkblue;
+    color: white;
+    font-size: 24px;
+
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 15px;
+}
+
+.logo {
+    /* display: inline-block; */
+    float: left;
+}
+
+ul {
+
+    list-style-type: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    /* display: inline-block; */
+    float: left;
+    margin-left: 15px;
+}
+
+.borda {
+    border: 1px solid black;
+    overflow: auto;
+
+}
+
+.card {
+    position: relative;
+    float: left;
+    width: 400px;
+    height: 200px;
+    border: 5px solid rgb(43, 226, 101);
+    text-align: center;
+}
+
+.c1 {
+    background-color: red;
+    line-height: 200px;
+    /* Nesse método é preciso saber a altura do elemento pai, pois ele não recebe valor relativo */
+}
+
+.c2 {
+    color: white;
+    background-color: blue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Só pode usar um transform por elemento, caso contrário ele anula o anterior.  */
+}
+
+.card2 {
+    clear: left;
+    float: left;
+    border: 2px solid blueviolet;
+    padding: 100px 150px;
+}
+
+.c3 {}
+
+/* Ordem do media queries interfere na execução do código, ficar atento com isso.  */
+
+@media screen and (max-width: 1000px) {
+    .top-bar {
+        background-color: yellow;
+        color: black;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .top-bar {
+        background-color: green;
+        color: white;
+    }
+
+    .logo {
+        border: 2px solid white;
+        float: none;
+        text-align: center;
+        padding: 5px;
+    }
+
+    ul {
+        float: none;
+        text-align: center;
+    }
+
+    li {
+        padding: 5px;
+        float: none;
+        background-color: darkcyan;
+        border: 2px solid white;
+        margin: 5px 0;
+    }
+
+
+}
